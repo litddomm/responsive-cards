@@ -1,0 +1,181 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+    max-width: 120vh;
+    background-color: hsl(0, 0%, 98%);
+    font-family: "Poppins";
+    margin: 0 auto;
+    transform: translateY(15%);
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    /*overflow-wrap: break-word;*/
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  /*h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }*/
+
+  .grid-container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 16%;
+  }
+
+ .grid-container .down{
+  transform: translateY(50%);
+ }
+
+ @media(max-width:1363px){
+    .grid-container .down{
+      transform: translateY(0);
+    }
+ }
+
+  @media(max-width: 600px){
+    .grid-container{
+      display: grid;
+      grid-template-columns: 400px;
+    }
+  }
+
+ @media(max-width:600px){
+  .grid-container div{
+    margin: 0 auto;
+  }
+ }
+
+  .grid-container div{
+    max-width: 300px;
+    min-height: 200px;
+    background-color: white;
+    box-shadow: 10px 10px 30px lightgray;
+  }
+
+
+
+  .teamCard{
+    border-top: 2px solid hsl(0, 78%, 62%);
+    border-radius: 0.3rem;
+  }
+
+  .catsCard{
+    border-top: 2px solid hsl(34, 97%, 64%);
+    border-radius: 0.3rem;
+  }
+
+  .calculatorCard{
+    border-top: 2px solid hsl(212, 86%, 64%);
+    border-radius: 0.3rem;
+    
+  }
+
+  .supervisorCard{
+    border-top: 2px solid hsl(180, 62%, 55%);
+    border-radius: 0.3rem;
+  }
+
+  .textContainer{
+    text-align: center;
+  }
+
+  .firstH1{
+    font-family:"Poppins";
+    font-weight: 200;
+    
+  }
+
+  @media(max-width: 1031px){
+    .firstH1{
+      font-size: 1.5rem;
+    }
+  }
+
+  .secondH1{
+    font-family:"Poppins";
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  @media(max-width: 1031px){
+    .secondH1{
+      font-size: 1.5rem;
+    }
+  }
+
+  @media(max-width:350px){
+    .secondH1{
+      max-height: 50vh;
+    }
+  }
+  .firstP{
+    font-family: "Poppins";
+    margin-bottom: 50px;
+    max-width: 50%;
+    margin-left: 28%;
+    color: hsl(229, 6%, 66%);
+  }
+
+  @media(max-width:450px){
+    .firstP{
+      margin: auto;
+      max-width: 330px;
+    }
+  }
+
+  @media(max-width:650px){
+    .firstP{
+      margin: auto;
+      max-width: 330px;
+    }
+  }
+
+  .cardPara{
+    color: hsl(229, 6%, 66%);
+    padding: 3px 20px;
+  }
+
+  .cardH1{
+    font-weight: 400;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+  }
+
+  .cardImg{
+    margin-left: 70%;
+  }
+
+ 
